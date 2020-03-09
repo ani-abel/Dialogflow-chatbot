@@ -1,0 +1,73 @@
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+
+@include nb-install() {
+  @include nb-theme-global();
+};
+/* You can add global styles to this file, and also import other style files */
+
+::ng-deep nb-layout-column {
+  display: flex;
+  justify-content: flex-end !important;
+}
+
+nb-layout-header {
+  width: 500px;
+  margin-bottom: 0 !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+nb-layout-header nav {
+  padding-bottom: 0 !important;
+  justify-content: center !important;
+  background-color: #FF3D71 !important;
+}
+
+.defaultT nav {
+  background-color: #00D68F !important;
+}
+
+nb-layout-header nav p {
+  text-align: center !important;
+  color: #fff !important;
+  font-size: 18px !important;
+}
+
+nb-chat {
+  width: 500px;
+  height: 600px !important;
+  bottom: 0;
+  margin: 0 !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 0 !important;
+}
+
+nb-layout-column {
+  width: 500px;
+  height: 130px;
+}
+
+.error-color {
+  color: indianred !important;
+}
+
+.success-color {
+  color: green !important;
+}
+
+chat-dialog {
+  position: fixed;
+  z-index: 99;
+  bottom: 0 !important;
+  right: 0 !important;
+  // display: none;
+}
+
+.display-block {
+  display: block !important;
+}
+
+.display-none {
+  display: none !important;
+}
